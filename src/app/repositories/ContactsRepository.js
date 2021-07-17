@@ -25,14 +25,14 @@ class ContactsRepository {
   }
 
   findById(id) {
-    // Get One register
+    // Get One register by id
     return new Promise((resolve) => resolve(
       contacts.find((contact) => contact.id === id),
     ));
   }
 
   findByEmail(email) {
-    // Get one email
+    // Get One register by email
     return new Promise((resolve) => resolve(
       contacts.find((contact) => contact.email === email),
     ));
@@ -61,6 +61,26 @@ class ContactsRepository {
 
       contacts.push(newContact);
       resolve(newContact);
+    });
+  }
+
+  update(id, {
+    name, email, phone, category_id,
+  }) {
+    return new Promise((resolve) => {
+      const updatedContact = {
+        id,
+        name,
+        email,
+        phone,
+        category_id,
+      };
+
+      contacts = contacts.map((contact) => (
+        contact.id === id ? updatedContact : contact
+      ));
+
+      resolve(updatedContact);
     });
   }
 }
