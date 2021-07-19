@@ -1,6 +1,8 @@
 // uuid -> 'Universal Unique ID'
 const { v4 } = require('uuid');
 
+const db = require('../../database');
+
 let contacts = [
   {
     id: v4(),
@@ -46,22 +48,17 @@ class ContactsRepository {
     });
   }
 
-  create({
+  async create({
     name, email, phone, category_id,
   }) {
     // Create One register
-    return new Promise((resolve) => {
-      const newContact = {
-        id: v4(),
-        name,
-        email,
-        phone,
-        category_id,
-      };
+    const [row] = await db.query(`
+      INSERT INTO contacts(name, email, phone, category_id)
+      VALUES($1, $2, $3, $4)
+      RETURNING *
+    `, [name, email, phone, category_id]);
 
-      contacts.push(newContact);
-      resolve(newContact);
-    });
+    return row;
   }
 
   update(id, {
