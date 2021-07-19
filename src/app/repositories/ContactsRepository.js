@@ -21,9 +21,11 @@ let contacts = [
 ];
 
 class ContactsRepository {
-  findAll() {
+  async findAll() {
     // List all registers
-    return new Promise((resolve) => resolve(contacts));
+    const rows = await db.query('SELECT * FROM contacts');
+
+    return rows;
   }
 
   findById(id) {
