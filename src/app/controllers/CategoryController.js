@@ -10,6 +10,20 @@ class CategoryController {
     response.json(categories);
   }
 
+  async show(request, response) {
+    // Get one category
+    const { id } = request.params;
+
+    const category = await CategoriesRepository.findById(id);
+
+    if (!category) {
+      // 404: Not Found
+      return response.status(404).json({ error: 'Category not found' });
+    }
+
+    response.json(category);
+  }
+
   async store(request, response) {
     // To create one category
     const { name } = request.body;
@@ -18,7 +32,7 @@ class CategoryController {
       return response.status(400).json({ error: 'Name is required' });
     }
 
-    const categoryExists = await CategoriesRepository.findAll(name);
+    const categoryExists = await CategoriesRepository.findByName(name);
 
     if (categoryExists) {
       return response.status(400).json({ error: 'This category is already in use' });
