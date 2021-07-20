@@ -1,24 +1,5 @@
 // uuid -> 'Universal Unique ID'
-const { v4 } = require('uuid');
-
 const db = require('../../database');
-
-const contacts = [
-  {
-    id: v4(),
-    name: 'Nikolas',
-    email: 'nikolas@mail.com',
-    phone: '40028992',
-    category_id: v4(),
-  },
-  {
-    id: v4(),
-    name: 'Thif',
-    email: 'thif@mail.com',
-    phone: '112233444',
-    category_id: v4(),
-  },
-];
 
 class ContactsRepository {
   async findAll(orderBy = 'ASC') {
