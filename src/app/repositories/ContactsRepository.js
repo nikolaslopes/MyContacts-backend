@@ -35,11 +35,11 @@ class ContactsRepository {
     return row;
   }
 
-  findByEmail(email) {
+  async findByEmail(email) {
     // Get One register by email
-    return new Promise((resolve) => resolve(
-      contacts.find((contact) => contact.email === email),
-    ));
+    const [row] = await db.query('SELECT * FROM contacts WHERE email = $1', [email]);
+
+    return row;
   }
 
   delete(id) {
