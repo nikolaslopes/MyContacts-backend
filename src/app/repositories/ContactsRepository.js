@@ -3,7 +3,7 @@ const { v4 } = require('uuid');
 
 const db = require('../../database');
 
-let contacts = [
+const contacts = [
   {
     id: v4(),
     name: 'Nikolas',
@@ -70,12 +70,11 @@ class ContactsRepository {
     return row;
   }
 
-  delete(id) {
+  async delete(id) {
     // Delete One register
-    return new Promise((resolve) => {
-      contacts = contacts.filter((contact) => contact.id !== id);
-      resolve();
-    });
+    const deleteOp = await db.query('DELETE FROM contacts WHERE id = $1', [id]);
+
+    return deleteOp;
   }
 }
 
