@@ -10,9 +10,9 @@ class CategoriesRepository {
     return rows;
   }
 
-  async findById(id) {
-    // Get One category by id
-    const [row] = await db.query('SELECT * FROM categories WHERE id = $1', [id]);
+  async findByName(name) {
+    // Get one category by name
+    const [row] = await db.query('SELECT * FROM categories WHERE name = $1', [name]);
 
     return row;
   }
