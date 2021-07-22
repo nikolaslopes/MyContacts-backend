@@ -1,7 +1,7 @@
 <div align="center">
   <h1><strong>	🔥 MyContacts Express 🔥 </strong></h1>
 </div>
-  <p> My API to list categories, create, update and delete users. </p> 
+  <p> My API to list categories, create, list, update and delete users. </p> 
 <br>
  <h1><strong>	About the project </strong></h1>
   
