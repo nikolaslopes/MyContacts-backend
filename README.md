@@ -17,7 +17,7 @@
 # 🚀 Techs
 - Express.js
 - Docker
-- Postgres SQL
+- PostgreSQL
 - Insomnia
     
  <br>
