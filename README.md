@@ -1,5 +1,5 @@
 <div align="center">
-  <h1><strong>	🔥 MyContacts Express 🔥 </strong></h1>
+  <h1><strong>	🔥 MyContacts Back-end 🔥 </strong></h1>
 </div>
   <p> My API to list categories and users, with the possibility to create, list, update and delete both. </p> 
 <br>
