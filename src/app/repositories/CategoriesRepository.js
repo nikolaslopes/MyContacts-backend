@@ -39,7 +39,7 @@ class CategoriesRepository {
   }
 
   async delete(id) {
-    // Dele one category
+    // Delete one category
     const deleteOp = await db.query('DELETE FROM categories WHERE id = $1', [id]);
 
     return deleteOp;
