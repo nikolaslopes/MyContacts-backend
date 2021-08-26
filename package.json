@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "API to store contacts",
   "main": "src/index.js",
-  "repository": "https://github.com/nikolaslopes/myContacts.git",
   "author": "Nikolas Lopes",
   "license": "MIT",
   "scripts": {
@@ -12,7 +11,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
-    "pg": "^8.6.0"
+    "pg": "^8.7.1"
   },
   "devDependencies": {
     "eslint": "^7.30.0",
