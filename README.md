@@ -3,7 +3,7 @@
 </div>
 
 <h3 align="center">
-   <p> My API to create contacts and categories. </p> 
+   <p> My API to CRUD contacts and list categories. </p> 
 </h3>
 
 <br>
@@ -32,7 +32,7 @@ Steps to run:
 
 * Open the front-end and back-end folders and run in both: `yarn install`
 
-* Create the image, run in terminal: `run
+* Create the image, run in terminal: `docker run --name pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres` 
 
 * Then, run in both terminals: `yarn dev`
 
