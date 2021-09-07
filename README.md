@@ -36,7 +36,7 @@ Steps to run:
 
 * Then, run in both terminals: `yarn dev`
 
-* Open in `Browser` or `Insomnia`: http://localhost:3001
+* Open in the `Browser` or `Insomnia`: http://localhost:3001
  
 <br><br>
   
