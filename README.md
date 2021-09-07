@@ -30,9 +30,9 @@ Steps to run:
 
 * Open the folder in the terminal `cd MyContacts-backend`
 
-* Run in the: `yarn install`
+* Run in the terminal: `yarn install`
 
-* Create the image, run in the terminal: `docker run --name pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres` 
+* To create the `Docker` image, run in the terminal: `docker run --name pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres` 
 
 * Then, run in the terminal: `yarn dev`
 
