@@ -32,6 +32,8 @@ Steps to run:
 
 * Open the front-end and back-end folders and run in both: `yarn install`
 
+* Create the image, run in terminal: `run
+
 * Then, run in both terminals: `yarn dev`
 
 * Open in `Browser` or `Insomnia`: http://localhost:3001
