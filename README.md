@@ -1,31 +1,56 @@
 <div align="center">
   <h1><strong>	🔥 MyContacts Back-end 🔥 </strong></h1>
 </div>
-  <p> My API to list categories and users, with the possibility to create, list, update and delete both. </p> 
-<br>
- <h1><strong>	About the project </strong></h1>
-  
-  This API was made with Express.js, and I used the [Insomnia](https://insomnia.rest/download) to test the CRUD system. The most cool about all of this is that 
-    I don't use mocks to create the users. I created the Data Base usigin the [Postgres SQL](https://www.postgresql.org/) , so that makes the aplication more sophisticated and 
-    useful. Futhermore, to use Postgres I installed the wonderful [Docker](https://www.docker.com/) to consuming API and create the Data Base. How it is a Back-end project, you
-    can see the code and who knows give a git clone and test yourself!
-  
 
+<h3 align="center">
+   <p> My API to create contacts and categories. </p> 
+</h3>
+
+<br>
+
+## About the project <img src="gitHub-imgs/tic-computer-icon.svg" alt="docker" align="center" height="30">
+
+  This API was made with `Express.js`, and I used the `Insomnia` to test the CRUD system. I created the Data Base using the `PostgreSQL` and I put it in a `Docker` container, so that makes the aplication more sophisticated and useful.
+
+<br>
+
+This API is be consumed by [MyContacts - frontend](https://github.com/nikolaslopes/MyContacts-frontend).
+
+<br><br>
+
+## Run aplication :running_woman:	
+
+Note :raised_hand:: _&nbsp;_ I used `yarn` package in this project
+
+Steps to run:
+
+* You need had install [Docker](https://www.docker.com/get-started) and the [Postgres Image](https://hub.docker.com/_/postgres)
+
+* Download the `zip project` or execute on terminal: `git clone https://github.com/nikolaslopes/MyContacts-backend.git`
+
+* Open the folder in the terminal `cd MyContacts-backend`
+
+* Open the front-end and back-end folders and run in both: `yarn install`
+
+* Then, run in both terminals: `yarn dev`
+
+* Open in `Browser` or `Insomnia`: http://localhost:3001
  
- <br>
+<br><br>
   
-# 🚀 Techs
-- Express.js
-- Docker
-- PostgreSQL
-- Insomnia
+## Techs :rocket:
+- Express.js <img src="gitHub-imgs/nodejs-logo-icon.svg" alt="express" align="center" height="20">
+- Docker <img src="gitHub-imgs/docker-icon2.svg" alt="docker" align="center" height="20">
+- PostgreSQL <img src="gitHub-imgs/postgresql-icon.svg" alt="docker" align="center" height="20">
+- Insomnia <img src="gitHub-imgs/insomnia-icon.svg" alt="docker" align="center" height="20">
     
- <br>
+<br><br>
    
-# 👨🏻‍💻 Author
+## Author :man_technologist:
 
 - GitHub: [nikolaslopes](https://github.com/nikolaslopes) :octocat:
-- LinkedIn: [nikolas-lopes](https://www.linkedin.com/in/nikolas-lopes-b06524209/) :shipit:
+- LinkedIn: [nikolas-lopes](https://www.linkedin.com/in/nikolas-lopes-b06524209/) <img src="gitHub-imgs/linkedin-icon.svg" alt="express" align="center" height="20">
   
-  <br>
-<p>Thanks for your support :mage_man:<p>
+<br>
+
+<p>Thanks for your support :shipit:
