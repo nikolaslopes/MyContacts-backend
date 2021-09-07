@@ -30,11 +30,11 @@ Steps to run:
 
 * Open the folder in the terminal `cd MyContacts-backend`
 
-* Open the front-end and back-end folders and run in both: `yarn install`
+* Run: `yarn install`
 
 * Create the image, run in terminal: `docker run --name pg -e POSTGRES_USER=root -e POSTGRES_PASSWORD=root -p 5432:5432 -d postgres` 
 
-* Then, run in both terminals: `yarn dev`
+* Then, run in the terminal: `yarn dev`
 
 * Open in the `Browser` or `Insomnia`: http://localhost:3001
  
