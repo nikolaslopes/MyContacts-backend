@@ -8,7 +8,7 @@
 
 <br>
 
-## About the project <img src="gitHub-imgs/tic-computer-icon.svg" alt="docker" align="center" height="30">
+## About the project <img src="gitHub-imgs/github-icon2.svg" alt="github" align="center" height="40">
 
   This API was made with `Express.js`, and I used the `Insomnia` to test the CRUD system. I created the Data Base using the `PostgreSQL` and I put it in a `Docker` container, so that makes the aplication more sophisticated and useful.
 
@@ -43,15 +43,15 @@ Steps to run:
 ## Techs :rocket:
 - Express.js <img src="gitHub-imgs/nodejs-logo-icon.svg" alt="express" align="center" height="20">
 - Docker <img src="gitHub-imgs/docker-icon2.svg" alt="docker" align="center" height="20">
-- PostgreSQL <img src="gitHub-imgs/postgresql-icon.svg" alt="docker" align="center" height="20">
-- Insomnia <img src="gitHub-imgs/insomnia-icon.svg" alt="docker" align="center" height="20">
+- PostgreSQL <img src="gitHub-imgs/postgresql-icon.svg" alt="postgresql" align="center" height="20">
+- Insomnia <img src="gitHub-imgs/insomnia-icon.svg" alt="insomnia" align="center" height="20">
     
 <br><br>
    
-## Author :man_technologist:
+## Author <img src="gitHub-imgs/tic-computer-icon.svg" alt="robot" align="center" height="30">
 
 - GitHub: [nikolaslopes](https://github.com/nikolaslopes) :octocat:
-- LinkedIn: [nikolas-lopes](https://www.linkedin.com/in/nikolas-lopes-b06524209/) <img src="gitHub-imgs/linkedin-icon.svg" alt="express" align="center" height="20">
+- LinkedIn: [nikolas-lopes](https://www.linkedin.com/in/nikolas-lopes-b06524209/) <img src="gitHub-imgs/linkedin-icon.svg" alt="linkedin" align="center" height="20">
   
 <br>
 
